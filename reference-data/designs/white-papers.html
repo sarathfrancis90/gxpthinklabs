@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#004b58",
+              "tertiary": "#8ce7ff",
+              "primary-dim": "#6063ee",
+              "surface-bright": "#2c2c30",
+              "outline": "#767578",
+              "primary": "#a3a6ff",
+              "on-background": "#fbf8fc",
+              "tertiary-container": "#53ddfc",
+              "on-secondary-fixed-variant": "#5f28c8",
+              "outline-variant": "#48474b",
+              "tertiary-fixed": "#53ddfc",
+              "secondary-fixed-dim": "#ceb9ff",
+              "surface-variant": "#25252a",
+              "on-surface-variant": "#acaaae",
+              "on-primary": "#0f00a4",
+              "surface-container-highest": "#25252a",
+              "background": "#0e0e11",
+              "on-tertiary-fixed": "#003640",
+              "inverse-surface": "#fbf8fc",
+              "secondary-fixed": "#dac9ff",
+              "on-tertiary": "#005464",
+              "surface-container": "#19191d",
+              "inverse-on-surface": "#555458",
+              "error": "#ff6e84",
+              "surface-dim": "#0e0e11",
+              "error-container": "#a70138",
+              "secondary-container": "#5516be",
+              "inverse-primary": "#494bd7",
+              "primary-fixed": "#9396ff",
+              "on-error-container": "#ffb2b9",
+              "surface": "#0e0e11",
+              "error-dim": "#d73357",
+              "surface-tint": "#a3a6ff",
+              "secondary-dim": "#8455ef",
+              "primary-fixed-dim": "#8387ff",
+              "on-secondary-container": "#d9c8ff",
+              "surface-container-high": "#1f1f23",
+              "on-error": "#490013",
+              "surface-container-lowest": "#000000",
+              "on-primary-container": "#0a0081",
+              "on-primary-fixed": "#000000",
+              "on-tertiary-fixed-variant": "#005564",
+              "secondary": "#ac8aff",
+              "tertiary-dim": "#40ceed",
+              "surface-container-low": "#131316",
+              "on-secondary-fixed": "#40009b",
+              "on-surface": "#fbf8fc",
+              "on-primary-fixed-variant": "#0e009d",
+              "tertiary-fixed-dim": "#40ceed",
+              "on-secondary": "#280067",
+              "primary-container": "#9396ff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(24, 24, 27, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(163, 166, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% -20%, rgba(99, 102, 241, 0.15) 0%, rgba(14, 14, 17, 0) 60%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#09090B]/80 backdrop-blur-md border-b border-[#27272A] shadow-sm font-sans antialiased tracking-tight">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#FAFAFA]">GXPThinklabs</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#A1A1AA] hover:text-[#FAFAFA] transition-colors duration-200 ease-in-out" href="#">Services</a>
+<a class="text-[#A1A1AA] hover:text-[#FAFAFA] transition-colors duration-200 ease-in-out" href="#">Solutions</a>
+<a class="text-[#A1A1AA] hover:text-[#FAFAFA] transition-colors duration-200 ease-in-out" href="#">About</a>
+<a class="text-indigo-400 border-b-2 border-indigo-500 pb-1 duration-200 ease-in-out" href="#">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-indigo-500 dark:text-indigo-400 font-semibold hover:bg-[#18181B] px-4 py-2 rounded-md transition-all duration-200 ease-in-out">
+                    Contact Us
+                </button>
+<button class="md:hidden text-[#FAFAFA]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-24 pb-20">
+<!-- Hero Section -->
+<header class="hero-gradient px-6 py-20 text-center relative overflow-hidden">
+<div class="max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary/20 text-primary text-xs font-label mb-6 tracking-wider uppercase">
+                    Knowledge Hub
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-[#FAFAFA] tracking-tighter mb-6">
+                    Resources
+                </h1>
+<p class="text-xl md:text-2xl text-[#A1A1AA] font-light max-w-2xl mx-auto">
+                    Discover the Future of Compliance
+                </p>
+</div>
+</header>
+<!-- Filter/Category Section -->
+<section class="max-w-7xl mx-auto px-6 mb-16">
+<div class="flex flex-wrap items-center justify-center gap-3 py-6 border-y border-[#27272A]">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label text-sm transition-all shadow-lg shadow-primary/20">All</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-[#FAFAFA] hover:bg-surface-container-high border border-outline-variant font-label text-sm transition-all">White Papers</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-[#FAFAFA] hover:bg-surface-container-high border border-outline-variant font-label text-sm transition-all">Guides</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-[#FAFAFA] hover:bg-surface-container-high border border-outline-variant font-label text-sm transition-all">Case Studies</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-[#FAFAFA] hover:bg-surface-container-high border border-outline-variant font-label text-sm transition-all">Compliance Updates</button>
+</div>
+</section>
+<!-- Card Grid -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="glass-card group p-8 rounded-xl flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5">
+<div class="flex justify-between items-start mb-6">
+<span class="text-xs font-label text-primary-dim uppercase tracking-widest">White Paper</span>
+<span class="text-xs font-label text-[#71717A]">June 2024</span>
+</div>
+<div class="aspect-video w-full mb-6 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="AI Systems" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="Futuristic glowing neural network visualization with indigo light pulses on a deep black background representing AI validation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7jJXSxapWsxZZ02xhh2h8CnmqqqQMEeHn48EDIx9PeMHqeHgOxsTDgwQYw4THR78T5JCs76AVJQkfPQrVEsXYKiBLvOVBESPYZV_Dg8ODTB605bbEh2pFzlU40ZApVa8l4U7jcCwVhLcLKlJ6EywEYA2zuEe_WOlOKhEdPqpmRh_x6ltRWHloAIUSkqlF2CnFfQCcxBydIO1WBzKiZX_7lKISJM6gjuubemTxafxqpTiEUr3SyzfoHClI6_tnHyylKOchoaPA3dg"/>
+</div>
+<h3 class="text-2xl font-bold text-[#FAFAFA] mb-4 group-hover:text-primary transition-colors">Validating AI Systems</h3>
+<p class="text-[#A1A1AA] mb-8 leading-relaxed font-light">
+                        A comprehensive framework for validating non-deterministic AI models in GxP environments.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<button class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-bold rounded-lg transition-all hover:bg-primary-dim active:scale-95">
+                            Download
+                            <span class="material-symbols-outlined text-sm">download</span>
+</button>
+<span class="text-xs text-[#71717A] italic">12 min read</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-card group p-8 rounded-xl flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5">
+<div class="flex justify-between items-start mb-6">
+<span class="text-xs font-label text-primary-dim uppercase tracking-widest">Guide</span>
+<span class="text-xs font-label text-[#71717A]">April 2024</span>
+</div>
+<div class="aspect-video w-full mb-6 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="CSV Best Practices" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="Abstract digital dashboard with complex data points and neon indigo connecting lines showing modern computer system validation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgol9VYd_XgNCkFxkV7Jk4Zaanb64OxESvQEWbKwR4GIn1B6KimKIWv-b9j4FRCms4w4sdeH8vMVVJlrV6QBzuuu-7NxksLzZbSLcAjLa063VeWtvNwXBOVUkw0ZRrWwwBueQci_w-YuNOglb6GF2s0uhp7ZMtLzGymRrL5jApMuxalGLicztpMFdawBkHhUX60hA1KbvwHrY4vYmzFhQt8uxOc1sigAdTDorB0QMWV0nBVKntjqremyaqShg855Gq-q9AV8cuqGg"/>
+</div>
+<h3 class="text-2xl font-bold text-[#FAFAFA] mb-4 group-hover:text-primary transition-colors">CSV Best Practices for 2024</h3>
+<p class="text-[#A1A1AA] mb-8 leading-relaxed font-light">
+                        Modernizing your Computer System Validation strategy using risk-based approaches and CSA principles.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<button class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-bold rounded-lg transition-all hover:bg-primary-dim active:scale-95">
+                            Download
+                            <span class="material-symbols-outlined text-sm">download</span>
+</button>
+<span class="text-xs text-[#71717A] italic">18 min read</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-card group p-8 rounded-xl flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5">
+<div class="flex justify-between items-start mb-6">
+<span class="text-xs font-label text-primary-dim uppercase tracking-widest">Guide</span>
+<span class="text-xs font-label text-[#71717A]">February 2024</span>
+</div>
+<div class="aspect-video w-full mb-6 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Infrastructure Qualification" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="Clean minimal data center server rack glowing with soft indigo light in a dark high-tech room representing infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLezTgut4uMdrkA6b7_XQAya3DeeJrNIQQXh4zjLMyFFOkleMVCiZ2_Vp0xNkHt-6elPLhGrcmg27H4M4zuH0Yk_li34e6IfV1P5znTPiBmaknhg4QEl84A0vOQ_Ws-BVlz7wizkuG3Xl9kjrbqtLvic8nDj1RsUfuonCQahPBsg6mAHPV6t8ZIstqB_ief2ZgKNDmdFRQUosTZxSNKjMhZF7_nZYK5znl0gAJJCJ5k4OHBMQDYGcQbNx_gzjqR4uNLJw7NNDth4"/>
+</div>
+<h3 class="text-2xl font-bold text-[#FAFAFA] mb-4 group-hover:text-primary transition-colors">Infrastructure Qualification Guide</h3>
+<p class="text-[#A1A1AA] mb-8 leading-relaxed font-light">
+                        Ensuring your cloud and on-premise infrastructure meets rigorous GxP standards.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<button class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-bold rounded-lg transition-all hover:bg-primary-dim active:scale-95">
+                            Download
+                            <span class="material-symbols-outlined text-sm">download</span>
+</button>
+<span class="text-xs text-[#71717A] italic">25 min read</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="glass-card group p-8 rounded-xl flex flex-col transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5">
+<div class="flex justify-between items-start mb-6">
+<span class="text-xs font-label text-primary-dim uppercase tracking-widest">White Paper</span>
+<span class="text-xs font-label text-[#71717A]">January 2024</span>
+</div>
+<div class="aspect-video w-full mb-6 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Data Integrity" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="A stylized globe made of digital data packets rotating with indigo and cyan light particles representing global data integrity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGD7en9uRAkm7DDffRyDKFanfPerKjHZIFxMAyRpWWiMb68Kq4CO-p2tSDCwWyrM1oMau0p4JDmW-DRmBSA2wbP1opuvG2vZ8Nl0AtZLoK8wm9239XsnMItzwF4pPvRkRvBoUTeclEwn3sN9t6AXsH_HUgc_zbSUVNI4gFhVXaO4s-f3PF2JYAxylQkxi5LNMqXzEAdwoqfuDo2CwFl9STgKd7RPUK3KG-RFCujkG782N_5OA5EysHAd-fGyLlw_DKLs1m7_27_QE"/>
+</div>
+<h3 class="text-2xl font-bold text-[#FAFAFA] mb-4 group-hover:text-primary transition-colors">Data Integrity in the Digital Age</h3>
+<p class="text-[#A1A1AA] mb-8 leading-relaxed font-light">
+                        Navigating the complexities of 21 CFR Part 11 and EU Annex 11 in a data-driven world.
+                    </p>
+<div class="mt-auto flex items-center justify-between">
+<button class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-bold rounded-lg transition-all hover:bg-primary-dim active:scale-95">
+                            Download
+                            <span class="material-symbols-outlined text-sm">download</span>
+</button>
+<span class="text-xs text-[#71717A] italic">15 min read</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section (Asymmetric) -->
+<section class="max-w-7xl mx-auto px-6 mt-32 mb-20">
+<div class="relative overflow-hidden rounded-3xl bg-indigo-900/10 border border-indigo-500/20 p-12 md:p-20 flex flex-col md:flex-row gap-12 items-center">
+<div class="relative z-10 flex-1">
+<h2 class="text-3xl md:text-5xl font-bold text-[#FAFAFA] mb-6">Stay ahead of the <span class="text-primary">curve.</span></h2>
+<p class="text-[#A1A1AA] text-lg max-w-md">Get the latest GxP insights, white papers, and compliance updates delivered directly to your inbox.</p>
+</div>
+<div class="relative z-10 w-full md:w-auto flex-1 max-w-md">
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-[#18181B] border border-[#27272A] rounded-lg px-6 py-4 text-[#FAFAFA] focus:outline-none focus:border-primary transition-all" placeholder="Enter your business email" type="email"/>
+<button class="px-8 py-4 bg-primary text-on-primary font-bold rounded-lg hover:bg-primary-dim transition-all whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-[10px] text-[#71717A] mt-4 uppercase tracking-widest text-center md:text-left">Join 5,000+ biotech leaders worldwide.</p>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 blur-[100px] rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-[#09090B] border-t border-[#27272A] text-sm font-light text-[#71717A]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="text-lg font-semibold text-[#FAFAFA]">GXPThinklabs</div>
+<div class="flex flex-wrap justify-center gap-6 cursor-pointer">
+<a class="text-[#71717A] hover:text-indigo-400 transition-colors">Privacy Policy</a>
+<a class="text-[#71717A] hover:text-indigo-400 transition-colors">Terms of Service</a>
+<a class="text-[#71717A] hover:text-indigo-400 transition-colors">GxP Compliance</a>
+<a class="text-[#71717A] hover:text-indigo-400 transition-colors">Contact</a>
+</div>
+<div class="text-[#71717A]">© 2024 GXPThinklabs. A SRJH Company. All rights reserved.</div>
+</div>
+</footer>
+</body></html>

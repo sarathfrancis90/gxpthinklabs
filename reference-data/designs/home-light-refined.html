@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GXPThinklabs | Modern Compliance for Life Sciences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#004e61",
+              "on-background": "#191c1e",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "outline-variant": "#c7c4d8",
+              "on-error": "#ffffff",
+              "secondary-container": "#8a4cfc",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#c3c0ff",
+              "on-primary-fixed": "#0f0069",
+              "surface-container-high": "#e6e8ea",
+              "primary-container": "#4f46e5",
+              "outline": "#777587",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#eff1f3",
+              "tertiary": "#004f63",
+              "surface": "#f7f9fb",
+              "primary-fixed": "#e2dfff",
+              "primary": "#3525cd",
+              "surface-container": "#eceef0",
+              "on-primary-container": "#dad7ff",
+              "on-secondary-fixed": "#25005a",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#a2e5ff",
+              "on-tertiary-fixed": "#001f28",
+              "surface-container-highest": "#e0e3e5",
+              "tertiary-container": "#006982",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#6cd3f7",
+              "secondary-fixed": "#eaddff",
+              "on-secondary-container": "#fffbff",
+              "on-surface": "#191c1e",
+              "surface-dim": "#d8dadc",
+              "surface-bright": "#f7f9fb",
+              "background": "#f7f9fb",
+              "primary-fixed-dim": "#c3c0ff",
+              "surface-tint": "#4d44e3",
+              "secondary-fixed-dim": "#d2bbff",
+              "on-secondary-fixed-variant": "#5a00c6",
+              "surface-container-low": "#f2f4f6",
+              "tertiary-fixed": "#b7eaff",
+              "secondary": "#712ae2",
+              "on-primary-fixed-variant": "#3323cc",
+              "surface-variant": "#e0e3e5",
+              "on-surface-variant": "#464555",
+              "inverse-surface": "#2d3133"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f7f9fb;
+        color: #191c1e;
+        -webkit-font-smoothing: antialiased;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .ambient-shadow {
+        box-shadow: 0px 4px 10px rgba(25, 28, 30, 0.04), 0px 20px 40px rgba(25, 28, 30, 0.06);
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-16 w-full max-w-full">
+<div class="text-xl font-bold tracking-tighter text-indigo-700 dark:text-indigo-300">
+                GXPThinklabs
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-indigo-600 font-semibold border-b-2 border-indigo-600 py-1 text-sm" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors duration-200 text-sm" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors duration-200 text-sm" href="#">Platform</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors duration-200 text-sm" href="#">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-xl scale-95 active:opacity-80 transition-transform">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative px-8 pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-40">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/20 blur-[120px] rounded-full"></div>
+</div>
+<div class="max-w-5xl mx-auto text-center">
+<span class="inline-block py-1 px-3 mb-6 text-[10px] font-bold tracking-[0.1em] uppercase text-primary bg-primary-fixed rounded-full">
+                    ESTABLISHED 2025 • AN SRJH COMPANY
+                </span>
+<h1 class="text-5xl md:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[0.95]">
+                    Modern Compliance for <span class="text-primary">Life Sciences.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Elevate your regulatory posture with AI-driven validation, high-integrity audits, and seamless infrastructure qualification tailored for the next generation of biotech.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 text-white font-bold rounded-xl bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                        Elevate Your Compliance
+                    </button>
+<button class="w-full sm:w-auto px-8 py-4 text-on-surface font-semibold rounded-xl hover:bg-surface-container-low transition-all duration-300">
+                        Our Services
+                    </button>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center md:text-left">
+<div class="text-3xl font-black text-primary mb-1">25+ Years</div>
+<div class="text-xs uppercase tracking-widest text-outline font-bold">Deep Expertise</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-3xl font-black text-primary mb-1">100% Success</div>
+<div class="text-xs uppercase tracking-widest text-outline font-bold">Audit Reliability</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-3xl font-black text-primary mb-1">End-to-End</div>
+<div class="text-xs uppercase tracking-widest text-outline font-bold">Full Lifecycle</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-3xl font-black text-primary mb-1">Global Network</div>
+<div class="text-xs uppercase tracking-widest text-outline font-bold">Seamless Operations</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Section -->
+<section class="py-32 bg-background">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20">
+<h2 class="text-4xl font-black tracking-tight mb-4">Precision Compliance Services</h2>
+<p class="text-on-surface-variant max-w-xl">We provide the technical foundation and regulatory oversight necessary to bring life-saving innovations to market safely.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1 -->
+<div class="group p-8 rounded-2xl bg-surface-container-lowest ambient-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 mb-8 flex items-center justify-center rounded-xl bg-primary-fixed text-primary">
+<span class="material-symbols-outlined text-3xl">settings_input_component</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Infrastructure Qualification</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Ensuring your core IT foundations meet stringent GxP requirements through rigorous testing and documentation protocols.
+                        </p>
+<a class="text-xs font-bold text-primary uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group p-8 rounded-2xl bg-surface-container-lowest ambient-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 mb-8 flex items-center justify-center rounded-xl bg-secondary-fixed text-secondary">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Computer System Validation</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Risk-based CSV strategies for cloud, SaaS, and on-premise systems, aligned with GAMP 5 and FDA 21 CFR Part 11.
+                        </p>
+<a class="text-xs font-bold text-primary uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group p-8 rounded-2xl bg-surface-container-lowest ambient-shadow hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 mb-8 flex items-center justify-center rounded-xl bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Compliance Audits</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Comprehensive gap analysis and vendor audits to verify adherence to global regulatory standards and internal quality systems.
+                        </p>
+<a class="text-xs font-bold text-primary uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-4">Industries we Empower</h2>
+<p class="text-on-surface-variant max-w-xl">Specialized compliance frameworks for high-stakes scientific sectors.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- BioTech -->
+<div class="relative h-[500px] rounded-3xl overflow-hidden group">
+<img alt="Biotechnology" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of scientist in white lab coat working with high-tech laboratory equipment in a sterile blue-lit modern facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQPfB6BVS206yz0uehy4qw1e_MUNdgvsbapvnW24cEZ12pKzaaOvxdvhFnSM-qeFybbxWL1cVT4ubIhJDVfMt-Q1TsjquoVMqh-MiVRQDH9zHwqvOQvfhyeHcQUaITugCFEJussALmjFisQqBX5Z0Hc5WN8wZV3eFiM91mFR64NYf9uBRPThuAP4Gq_0kXMXfEYVerDaovJqoqCDqwivPG9bNpl14-aYNQhdfEp-fso_v-OqZfc4Ki1s_tJ3sYTu8LiQYQeA2xoII"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Biotechnology</h4>
+<p class="text-sm text-slate-300">Accelerating gene therapy and cellular research through compliant digital transformation.</p>
+</div>
+</div>
+<!-- Pharma -->
+<div class="relative h-[500px] rounded-3xl overflow-hidden group">
+<img alt="Pharmaceutical" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sophisticated pharmaceutical manufacturing line with precision stainless steel equipment and clean clinical white lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuouAQeTftfL9b5_R8BsPY7nz-7uQdnKmdhBVrl9PiNd8appxLPgssLQXK8GHNv_3oVcdgIxvyljqEMRdf90bP4vs2GdZwS-wIcNxBBeD2Az_XsIf_PMRi9etVxm7RL87dZK1sdKDtEB6LU__SD82scZcbrcv8ZRk9kgr35fRUGQwAx9kbfB9NSBXVIGHTGYN16KiEh4cnZGH748JCgtScpuHIj7hCwJvcA8jssXlQZmZg8llsLp-uFhS0ZUXx2wibFTu5jwvBoMg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Pharmaceutical</h4>
+<p class="text-sm text-slate-300">Global quality assurance for drug discovery and large-scale clinical production.</p>
+</div>
+</div>
+<!-- Med Device -->
+<div class="relative h-[500px] rounded-3xl overflow-hidden group">
+<img alt="Medical Devices" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist high-tech medical device component on a white reflective surface with soft dramatic indigo shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Yjsed0mp2a4tk4zoNLd6Kl0Qmok5dvxKXhdYTNkuc8VJknRjdTujPO3tGSvQHhXImxdETx69YCFWADyjZ-iUJR0wSi4OiXbs_Ea3657ZAik6KXQPTw68BqJ4xG2myeA3wnNFGtjbLkjcCxpYP4gaqG2iRy4XhC2yi0F3ARZuf-oXGpqCm_HSss0PlAM_vdf8h45UByiW3kwbhZYxo2sqNGWal7FBDgf1p32eH9aFhMFYzD-zLcCgF6HaWWKE0P-x3EWkXZBUMHU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Medical Devices</h4>
+<p class="text-sm text-slate-300">Ensuring safety and efficacy for software-as-a-medical-device (SaMD) and wearable tech.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="px-8 py-24">
+<div class="max-w-7xl mx-auto rounded-[2.5rem] bg-gradient-to-br from-primary to-secondary p-12 md:p-24 text-center overflow-hidden relative">
+<div class="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">Ready to redefine your <br/>compliance strategy?</h2>
+<p class="text-white/80 text-lg mb-12 max-w-2xl mx-auto">Join the leading life sciences organizations leveraging GXPThinklabs for seamless regulatory success.</p>
+<button class="px-12 py-5 bg-white text-primary font-black rounded-xl hover:scale-105 active:scale-95 transition-all shadow-2xl">
+                        Schedule a Consultation
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-2">
+<div class="text-lg font-black text-slate-900 dark:text-slate-100 mb-4">GXPThinklabs</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 max-w-xs">
+                    Advancing life sciences through technical excellence and uncompromising compliance.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">hub</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">shield</span>
+</div>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-6">Solutions</h5>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Infrastructure</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Validation</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Auditing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">About</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Network</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Terms of Service</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-500 transition-all duration-300" href="#">Security</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-100 mb-6">Office</h5>
+<p class="text-sm text-slate-500 dark:text-slate-400">
+                    Innovation Hub,<br/>Suite 405<br/>Cambridge, MA 02139
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/60 dark:border-slate-800/60 text-center md:text-left">
+<span class="text-sm text-slate-500 dark:text-slate-400">© 2024 GXPThinklabs. A subsidiary of SRJH Parent Company.</span>
+</div>
+</footer>
+</body></html>

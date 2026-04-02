@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Infrastructure Qualification | GXPThinklabs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#555458",
+              "primary-fixed": "#9396ff",
+              "surface-container": "#19191d",
+              "on-secondary": "#280067",
+              "on-background": "#fbf8fc",
+              "surface-container-highest": "#25252a",
+              "on-surface-variant": "#acaaae",
+              "on-secondary-fixed": "#40009b",
+              "primary-fixed-dim": "#8387ff",
+              "on-secondary-container": "#d9c8ff",
+              "on-tertiary": "#005464",
+              "surface-tint": "#a3a6ff",
+              "on-tertiary-fixed": "#003640",
+              "on-error-container": "#ffb2b9",
+              "surface": "#0e0e11",
+              "inverse-primary": "#494bd7",
+              "outline": "#767578",
+              "on-primary-container": "#0a0081",
+              "surface-container-low": "#131316",
+              "primary-dim": "#6063ee",
+              "error-container": "#a70138",
+              "secondary": "#ac8aff",
+              "primary-container": "#9396ff",
+              "tertiary-dim": "#40ceed",
+              "surface-dim": "#0e0e11",
+              "surface-container-high": "#1f1f23",
+              "secondary-fixed-dim": "#ceb9ff",
+              "outline-variant": "#48474b",
+              "inverse-surface": "#fbf8fc",
+              "on-surface": "#fbf8fc",
+              "on-secondary-fixed-variant": "#5f28c8",
+              "error": "#ff6e84",
+              "on-primary": "#0f00a4",
+              "secondary-container": "#5516be",
+              "on-tertiary-fixed-variant": "#005564",
+              "on-tertiary-container": "#004b58",
+              "on-primary-fixed": "#000000",
+              "tertiary-fixed": "#53ddfc",
+              "on-primary-fixed-variant": "#0e009d",
+              "surface-variant": "#25252a",
+              "surface-bright": "#2c2c30",
+              "secondary-fixed": "#dac9ff",
+              "secondary-dim": "#8455ef",
+              "error-dim": "#d73357",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed-dim": "#40ceed",
+              "primary": "#a3a6ff",
+              "tertiary": "#8ce7ff",
+              "background": "#0e0e11",
+              "tertiary-container": "#53ddfc",
+              "on-error": "#490013"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(25, 25, 29, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(72, 71, 75, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<header class="bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 fixed top-0 w-full z-50 shadow-2xl shadow-indigo-500/10 font-inter antialiased">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-zinc-50">GXPThinklabs</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-indigo-400 font-semibold border-b-2 border-indigo-500 pb-1" href="#">Services</a>
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors" href="#">Compliance Library</a>
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors" href="#">About</a>
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-semibold hover:bg-primary-dim transition-all active:scale-95 duration-150">
+                    Get Started
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40" data-alt="futuristic dark data center with glowing blue and indigo fiber optic cables and server racks in a high-tech environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBabmgtDkg3_Zj-oYteLnoxVaSgTpuef-6B-oTPMy-Y4uKJ3LhN1TPXlStIG8ETMcfiSR1feZE_nXm4XsxWQNXFM8x_qAuGeMYM4ufrueQNUAwd_6o9gYyPuq9ejmp_yZg36gFDLkApjV2qyMSlHbdpnErOSMyvzhc7BD6_gMVLiRD1sou6swk5h0hEkLCU3rUSemVqT0OjdPwyfQ5O1U847VDHgHNsEgOSLVuM9-9glupABU9jucvDu_-l2zfknQsRgiOXEnfBivM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/40"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-label mb-6">
+<span class="material-symbols-outlined text-sm">cloud_done</span>
+                    INFRASTRUCTURE EXCELLENCE
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8">
+                    IT Infrastructure <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Qualification</span> and Maintenance
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                    Bridging the gap between rigid GxP compliance and modern cloud-native, hybrid, and on-premise infrastructure. Future-proof your validated stack.
+                </p>
+<div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+                        Schedule a Consultation
+                    </button>
+<button class="w-full sm:w-auto px-8 py-4 border border-outline-variant bg-surface-container-low text-on-surface rounded-xl font-bold text-lg hover:bg-surface-variant transition-all">
+                        View Framework
+                    </button>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Core Infrastructure Services</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-2xl group hover:border-indigo-500/50 transition-all">
+<div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Infrastructure Qualification Planning</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        Scalable strategies for AWS, Azure, On-prem, and Hybrid environments. We design the IQ/OQ framework that grows with your scaling needs.
+                    </p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Cloud Tenant Validation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Network Topology Qualification</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Disaster Recovery Strategy</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-2xl group hover:border-indigo-500/50 transition-all">
+<div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Location Risk Assessments</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        Comprehensive physical and digital site assessments. Evaluating environmental controls, security protocols, and connectivity redundancy.
+                    </p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Physical Access Control</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Environmental Monitoring</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> 3rd Party Data Center Audits</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-2xl group hover:border-indigo-500/50 transition-all">
+<div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-6 text-indigo-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">settings_input_component</span>
+</div>
+<h3 class="text-xl font-bold mb-4">IT Change Management</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        GxP-compliant lifecycle management for modern IT. Managing updates, patches, and configurations without losing your validated status.
+                    </p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Automated Change Logging</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Impact Assessment Protocols</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-indigo-500 text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> Infrastructure as Code (IaC) Audits</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Compliance Library Assets</h2>
+<p class="text-on-surface-variant">Ready-to-deploy document templates and technical frameworks.</p>
+</div>
+<button class="text-indigo-400 font-semibold flex items-center gap-2 hover:underline">
+                        Explore Full Library <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Asset 1 -->
+<div class="bg-surface-container-highest p-6 rounded-xl border border-outline-variant hover:bg-surface-bright transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-indigo-400">description</span>
+<span class="text-[10px] font-label px-2 py-1 bg-zinc-800 text-zinc-400 rounded uppercase">TEMPLATE</span>
+</div>
+<h4 class="font-bold mb-2">IQ/OQ/PQ Plans</h4>
+<p class="text-xs text-on-surface-variant mb-6">Comprehensive qualification master plans for server infrastructure.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xs text-zinc-500">PDF, DOCX</span>
+<span class="material-symbols-outlined text-indigo-500 text-xl">download</span>
+</div>
+</div>
+<!-- Asset 2 -->
+<div class="bg-surface-container-highest p-6 rounded-xl border border-outline-variant hover:bg-surface-bright transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-indigo-400">rule</span>
+<span class="text-[10px] font-label px-2 py-1 bg-zinc-800 text-zinc-400 rounded uppercase">GUIDELINE</span>
+</div>
+<h4 class="font-bold mb-2">IT Standard SOPs</h4>
+<p class="text-xs text-on-surface-variant mb-6">Core operating procedures for security, access, and backup.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xs text-zinc-500">DOCX</span>
+<span class="material-symbols-outlined text-indigo-500 text-xl">download</span>
+</div>
+</div>
+<!-- Asset 3 -->
+<div class="bg-surface-container-highest p-6 rounded-xl border border-outline-variant hover:bg-surface-bright transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-indigo-400">assignment</span>
+<span class="text-[10px] font-label px-2 py-1 bg-zinc-800 text-zinc-400 rounded uppercase">WORKFLOW</span>
+</div>
+<h4 class="font-bold mb-2">Work Instructions</h4>
+<p class="text-xs text-on-surface-variant mb-6">Step-by-step technical guides for systems administrators.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xs text-zinc-500">PDF</span>
+<span class="material-symbols-outlined text-indigo-500 text-xl">download</span>
+</div>
+</div>
+<!-- Asset 4 -->
+<div class="bg-surface-container-highest p-6 rounded-xl border border-outline-variant hover:bg-surface-bright transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-indigo-400">account_tree</span>
+<span class="text-[10px] font-label px-2 py-1 bg-zinc-800 text-zinc-400 rounded uppercase">MATRIX</span>
+</div>
+<h4 class="font-bold mb-2">Traceability Matrices</h4>
+<p class="text-xs text-on-surface-variant mb-6">Map infrastructure requirements to test scripts and risk controls.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xs text-zinc-500">XLSX</span>
+<span class="material-symbols-outlined text-indigo-500 text-xl">download</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6">
+<div class="max-w-5xl mx-auto glass-card rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-indigo-500/20 rounded-full blur-[80px]"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/20 rounded-full blur-[80px]"></div>
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 relative z-10">Ready to qualify your infrastructure?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto relative z-10">
+                    Let's discuss your roadmap and ensure your IT environment meets the highest standards of GxP compliance.
+                </p>
+<div class="relative z-10">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-xl hover:shadow-[0_0_40px_rgba(163,166,255,0.3)] transition-all">
+                        Schedule a Consultation
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 w-full py-12 px-6 border-t border-zinc-900 font-inter">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="text-sm font-bold text-zinc-200">GXPThinklabs</div>
+<div class="text-xs text-zinc-500">© 2024 GXPThinklabs (SRJH Group). Premium GxP Compliance Consulting.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Terms of Service</a>
+<a class="text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">LinkedIn</a>
+<a class="text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Contact Sales</a>
+</div>
+</div>
+</footer>
+</body></html>

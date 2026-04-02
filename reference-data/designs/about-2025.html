@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-fixed-variant": "#0e009d",
+            "surface-container-low": "#131316",
+            "tertiary-dim": "#40ceed",
+            "on-secondary-fixed-variant": "#5f28c8",
+            "on-primary-container": "#0a0081",
+            "error": "#ff6e84",
+            "on-tertiary-fixed-variant": "#005564",
+            "background": "#0e0e11",
+            "on-error-container": "#ffb2b9",
+            "surface-bright": "#2c2c30",
+            "inverse-surface": "#fbf8fc",
+            "surface-container-lowest": "#000000",
+            "primary-dim": "#6063ee",
+            "error-container": "#a70138",
+            "tertiary-fixed": "#53ddfc",
+            "secondary-container": "#5516be",
+            "secondary-dim": "#8455ef",
+            "primary": "#a3a6ff",
+            "on-background": "#fbf8fc",
+            "inverse-primary": "#494bd7",
+            "outline": "#767578",
+            "primary-container": "#9396ff",
+            "tertiary-fixed-dim": "#40ceed",
+            "outline-variant": "#48474b",
+            "surface": "#0e0e11",
+            "surface-tint": "#a3a6ff",
+            "secondary-fixed": "#dac9ff",
+            "surface-container": "#19191d",
+            "tertiary-container": "#53ddfc",
+            "on-surface-variant": "#acaaae",
+            "on-surface": "#fbf8fc",
+            "on-secondary-container": "#d9c8ff",
+            "surface-dim": "#0e0e11",
+            "inverse-on-surface": "#555458",
+            "error-dim": "#d73357",
+            "surface-container-high": "#1f1f23",
+            "on-error": "#490013",
+            "on-tertiary-container": "#004b58",
+            "primary-fixed": "#9396ff",
+            "on-secondary-fixed": "#40009b",
+            "tertiary": "#8ce7ff",
+            "on-tertiary-fixed": "#003640",
+            "on-tertiary": "#005464",
+            "on-secondary": "#280067",
+            "on-primary-fixed": "#000000",
+            "surface-variant": "#25252a",
+            "secondary": "#ac8aff",
+            "secondary-fixed-dim": "#ceb9ff",
+            "surface-container-highest": "#25252a",
+            "on-primary": "#0f00a4",
+            "primary-fixed-dim": "#8387ff"
+          },
+          fontFamily: {
+            "headline": ["Inter"],
+            "body": ["Inter"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .glass-effect {
+      backdrop-filter: blur(12px);
+      background: rgba(14, 14, 17, 0.7);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #a3a6ff, #8455ef);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-[#09090B]/80 backdrop-blur-md border-b border-zinc-800 shadow-2xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-white">GXPThinklabs</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center font-sans text-sm font-medium tracking-tight">
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Solutions</a>
+<a class="text-indigo-400 border-b-2 border-indigo-500 pb-1" href="#">About</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Services</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Insights</a>
+</div>
+<button class="bg-primary-dim text-on-primary font-label px-5 py-2 rounded-lg text-sm font-bold active:scale-95 duration-150 hover:bg-primary transition-all">
+        Contact Us
+      </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Microscope lens reflecting blue laboratory light" class="w-full h-full object-cover opacity-20" data-alt="Close-up of a laboratory microscope lens with deep blue and violet glowing reflections in a dark pharmaceutical research setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdKanl-lYCkdd5jWLVRVksNqjZ9scS0dJQN5Z9cMmGd510petmSbqtHKKNSffY9pQPUBk9iPz-cNMcxl0BrWERFZIwbFFP-jVuXlr9wDJaDEw3X5cavAbPEb6RLLlFzZ6C_1JdxqAZKJiU-PH3smR-NG5QKYCIqJXDDGm3sU9gsZkQC_Lrfh9Hh6WkR54I9jdHDZmNDfZ5aG6K31Qq-janMjV1pD4_IJX2noZ7pFN-pv9o4noAyyyZ5P1B-trl1RtYs8dEHup9b7s"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6">
+<div class="max-w-3xl">
+<span class="font-label text-primary tracking-widest uppercase text-xs font-bold mb-4 block">Established 2025</span>
+<h1 class="text-5xl md:text-7xl font-black font-headline tracking-tighter text-white mb-6 leading-[1.1]">
+          Decades of Expertise. <br/>
+<span class="text-gradient">Modern Approach.</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-xl leading-relaxed">
+          Bridging the gap between rigid regulatory standards and the agility of modern technology. We define the next generation of GxP compliance.
+        </p>
+</div>
+</div>
+</section>
+<!-- Mission Section (Bento Style) -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-8 md:p-12 border border-outline-variant/30 flex flex-col justify-center">
+<h2 class="text-3xl font-headline font-bold text-white mb-6">Our Mission</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+          We partner with biotech, pharma, and medical device companies to modernize quality systems. By integrating advanced automation with rigorous 21 CFR compliance, we transform regulatory overhead into a strategic advantage.
+        </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/50">
+<span class="material-symbols-outlined text-primary text-sm">biotech</span>
+<span class="text-xs font-label uppercase font-semibold">Biotech</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/50">
+<span class="material-symbols-outlined text-primary text-sm">medication</span>
+<span class="text-xs font-label uppercase font-semibold">Pharma</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/50">
+<span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
+<span class="text-xs font-label uppercase font-semibold">Medical Devices</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative group overflow-hidden rounded-xl border border-outline-variant/30">
+<img alt="Data visualization on screen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Digital dashboard displaying pharmaceutical data analytics with cool indigo tones and sharp data points on a dark monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS1Twrw4Fx016U5nlNzk9xG1_vjFE2DY-JIAFUlA5Ii-b58Phgu_eXl4SVHcllwtofLkNfmmD0njInYN0VRNOIG2_bpwquFZF1rs6xs6wbIVGRn8W5BnKKYgIxxhnpfN_Mlw4CdwAZxljK-_kQcR0vC7ZQgPDxUTgBlZyqI3MJauknN9JTKC5dYvwsp__tIkEn8LBaEV9ESzKCHHvLf6dmuM4SfSl1Rum5AiKX9n7F0WPF15hdk7pldVKKoGU6LGXVgoPE5P1x30A"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+</div>
+</div>
+</section>
+<!-- Pillars Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-bold text-white mb-4">Core Pillars</h2>
+<p class="text-on-surface-variant">The foundation of every engagement we undertake.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Risk-Based</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+            Prioritizing quality efforts where they matter most, following GAMP 5 principles to streamline validation without compromising safety.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Scalable</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+            Architecting frameworks that grow from stealth startups to global commercialization, ensuring your tech stack evolves with your pipeline.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-high p-8 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Audit-Ready</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+            Maintaining a state of permanent inspection readiness through automated documentation and continuous compliance monitoring.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-24 max-w-7xl mx-auto px-6 overflow-hidden">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold text-white">Our Heritage</h2>
+<p class="text-on-surface-variant mt-4">Merging legacy knowledge with future-ready solutions.</p>
+</div>
+<div class="relative space-y-12">
+<!-- Vertical Line -->
+<div class="absolute left-[11px] md:left-1/2 top-0 bottom-0 w-0.5 bg-zinc-800"></div>
+<!-- Item 1 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right">
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20 inline-block md:ml-auto">
+<span class="font-label text-primary font-bold text-lg">1997</span>
+<h4 class="text-white font-bold mt-1">Foundation of Expertise</h4>
+<p class="text-zinc-500 text-sm mt-2">Team leaders begin defining 21 CFR Part 11 strategies for global pharma leaders.</p>
+</div>
+</div>
+<div class="absolute left-0 md:left-1/2 w-6 h-6 bg-primary border-4 border-background rounded-full -translate-x-[7px] md:-translate-x-3 z-10"></div>
+<div class="md:w-1/2 md:pl-12"></div>
+</div>
+<!-- Item 2 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12"></div>
+<div class="absolute left-0 md:left-1/2 w-6 h-6 bg-primary-dim border-4 border-background rounded-full -translate-x-[7px] md:-translate-x-3 z-10"></div>
+<div class="md:w-1/2 md:pl-12">
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20 inline-block">
+<span class="font-label text-primary font-bold text-lg">2010</span>
+<h4 class="text-white font-bold mt-1">SaaS Validation Revolution</h4>
+<p class="text-zinc-500 text-sm mt-2">Expansion into multi-tenant cloud validation frameworks and agile SDLC compliance.</p>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right">
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20 inline-block md:ml-auto">
+<span class="font-label text-primary font-bold text-lg">2020</span>
+<h4 class="text-white font-bold mt-1">AI Validation Launch</h4>
+<p class="text-zinc-500 text-sm mt-2">Formalizing the practice for Machine Learning models and Automated Decision Systems.</p>
+</div>
+</div>
+<div class="absolute left-0 md:left-1/2 w-6 h-6 bg-primary-dim border-4 border-background rounded-full -translate-x-[7px] md:-translate-x-3 z-10"></div>
+<div class="md:w-1/2 md:pl-12"></div>
+</div>
+<!-- Item 4 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12"></div>
+<div class="absolute left-0 md:left-1/2 w-6 h-6 bg-white border-4 border-primary rounded-full -translate-x-[7px] md:-translate-x-3 z-10"></div>
+<div class="md:w-1/2 md:pl-12">
+<div class="bg-surface-container p-6 rounded-xl border-2 border-primary/40 inline-block shadow-[0_0_20px_rgba(163,166,255,0.1)]">
+<span class="font-label text-white font-bold text-lg">2025</span>
+<h4 class="text-white font-bold mt-1">GXPThinklabs Founded</h4>
+<p class="text-zinc-400 text-sm mt-2 font-medium">An SRJH Company established to pioneer data-driven GxP consulting.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Parent Company Section -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+<div class="inline-flex items-center gap-3 bg-zinc-900 border border-zinc-800 px-6 py-3 rounded-full mb-8">
+<span class="text-zinc-400 text-xs font-label uppercase tracking-widest">Part of the</span>
+<span class="text-white font-black tracking-tighter text-xl">SRJH</span>
+<span class="text-zinc-400 text-xs font-label uppercase tracking-widest">Ecosystem</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-headline font-black text-white mb-6">Corporate Excellence</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
+        GXPThinklabs operates as a specialized subsidiary of SRJH, leveraging global resources and institutional knowledge to deliver unparalleled depth in compliance engineering.
+      </p>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="bg-gradient-to-br from-indigo-900/40 to-transparent p-12 md:p-20 rounded-3xl border border-primary/20 text-center">
+<h2 class="text-4xl md:text-6xl font-headline font-black text-white mb-8">Ready to start?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-dim text-on-primary font-label px-10 py-4 rounded-xl text-lg font-bold hover:bg-primary transition-all shadow-xl active:scale-95 duration-150">
+          Book a Consultation
+        </button>
+<button class="bg-surface-container text-white border border-outline-variant font-label px-10 py-4 rounded-xl text-lg font-bold hover:bg-surface-container-high transition-all active:scale-95 duration-150">
+          View Solutions
+        </button>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="w-full py-12 px-6 mt-20 border-t border-zinc-800 bg-[#09090B]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div>
+<span class="text-lg font-bold text-white mb-4 block">GXPThinklabs</span>
+<p class="font-sans text-xs text-zinc-500 leading-relaxed max-w-xs">
+          Advanced compliance consulting for the life sciences industry. Precision engineering meets regulatory excellence.
+        </p>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="font-sans text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-sans text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-4">Operations</h4>
+<ul class="space-y-2">
+<li><a class="font-sans text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Compliance Standards</a></li>
+<li><a class="font-sans text-xs text-zinc-500 hover:text-indigo-400 transition-colors" href="#">Global Offices</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold text-sm mb-4">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container border border-outline-variant text-xs rounded-lg px-4 py-2 w-full focus:outline-none focus:border-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary-dim p-2 rounded-lg"><span class="material-symbols-outlined text-sm text-white">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-zinc-900 text-center md:text-left">
+<p class="font-sans text-xs text-zinc-500">© 2024 GXPThinklabs. A subsidiary of SRJH. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

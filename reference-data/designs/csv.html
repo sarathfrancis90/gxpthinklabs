@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error": "#490013",
+            "on-background": "#fbf8fc",
+            "tertiary-dim": "#40ceed",
+            "surface-container-high": "#1f1f23",
+            "background": "#0e0e11",
+            "surface-tint": "#a3a6ff",
+            "surface-variant": "#25252a",
+            "inverse-primary": "#494bd7",
+            "on-secondary": "#280067",
+            "on-secondary-fixed": "#40009b",
+            "surface-container-highest": "#25252a",
+            "secondary-fixed": "#dac9ff",
+            "surface-container-low": "#131316",
+            "surface-container-lowest": "#000000",
+            "surface-dim": "#0e0e11",
+            "inverse-surface": "#fbf8fc",
+            "outline": "#767578",
+            "on-tertiary-container": "#004b58",
+            "primary-fixed-dim": "#8387ff",
+            "tertiary-container": "#53ddfc",
+            "tertiary": "#8ce7ff",
+            "on-tertiary": "#005464",
+            "surface-bright": "#2c2c30",
+            "on-primary-fixed": "#000000",
+            "on-primary-container": "#0a0081",
+            "on-tertiary-fixed": "#003640",
+            "on-error-container": "#ffb2b9",
+            "primary": "#a3a6ff",
+            "primary-container": "#9396ff",
+            "on-primary": "#0f00a4",
+            "surface": "#0e0e11",
+            "secondary-fixed-dim": "#ceb9ff",
+            "secondary-container": "#5516be",
+            "on-surface-variant": "#acaaae",
+            "inverse-on-surface": "#555458",
+            "secondary": "#ac8aff",
+            "tertiary-fixed": "#53ddfc",
+            "on-secondary-container": "#d9c8ff",
+            "on-primary-fixed-variant": "#0e009d",
+            "on-tertiary-fixed-variant": "#005564",
+            "secondary-dim": "#8455ef",
+            "outline-variant": "#48474b",
+            "error-dim": "#d73357",
+            "surface-container": "#19191d",
+            "on-secondary-fixed-variant": "#5f28c8",
+            "error-container": "#a70138",
+            "error": "#ff6e84",
+            "primary-dim": "#6063ee",
+            "tertiary-fixed-dim": "#40ceed",
+            "primary-fixed": "#9396ff",
+            "on-surface": "#fbf8fc"
+          },
+          fontFamily: {
+            "headline": ["Inter"],
+            "body": ["Inter"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body { background-color: #0e0e11; color: #fbf8fc; font-family: 'Inter', sans-serif; }
+    .glass-effect { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+    .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(14, 14, 17, 0) 70%); }
+    .technical-grid { background-image: radial-gradient(#25252a 1px, transparent 1px); background-size: 40px 40px; }
+  </style>
+</head>
+<body class="selection:bg-primary/30">
+<!-- TopNavBar Implementation -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 shadow-2xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
+<div class="text-xl font-bold tracking-tighter text-white">GXPThinklabs</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8 font-sans tracking-tight">
+<a class="text-indigo-400 border-b-2 border-indigo-500 pb-1" href="#">Services</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Expertise</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">About</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#">Insights</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-indigo-500 text-white px-5 py-2 rounded-lg font-medium active:scale-95 duration-200 transition-all hover:bg-indigo-600">
+          Get Started
+        </button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 technical-grid opacity-20"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-variant/50 border border-outline-variant text-xs font-label text-primary mb-6">
+<span class="material-symbols-outlined text-sm">verified</span>
+          LATEST COMPLIANCE STANDARDS
+        </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6 max-w-4xl mx-auto leading-[1.1]">
+          Computer System <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Validation</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed font-body">
+          Bridging the gap between technological innovation and rigorous GxP compliance. Secure your digital transformation with industry-leading assurance.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold text-lg hover:bg-primary-container transition-all active:scale-95 flex items-center justify-center gap-2">
+            Schedule a Consultation
+            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-surface-container-high border border-outline-variant text-on-surface rounded-xl font-bold text-lg hover:bg-surface-variant transition-all flex items-center justify-center gap-2">
+            View Frameworks
+          </button>
+</div>
+</div>
+<!-- Abstract Data Visualization Decor -->
+<div class="absolute -bottom-24 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-primary/10 blur-[120px] rounded-full"></div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Our CSV Services</h2>
+<p class="text-on-surface-variant font-body">Tailored validation strategies that align with your specific technology stack and regulatory requirements.</p>
+</div>
+<div class="text-primary font-label text-sm uppercase tracking-widest flex items-center gap-2 border-b border-primary/30 pb-2">
+          Explore Solutions <span class="material-symbols-outlined">south</span>
+</div>
+</div>
+<div class="bento-grid">
+<!-- Service 1: CSV/CSA -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden bg-surface-container rounded-xl p-8 border border-outline-variant hover:border-primary/50 transition-all">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-3xl -mr-20 -mt-20 group-hover:bg-primary/10 transition-all"></div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-weight="fill">security</span>
+<h3 class="text-2xl font-bold text-on-surface mb-3">CSV/CSA Strategy Development</h3>
+<p class="text-on-surface-variant max-w-md leading-relaxed">
+            Transitioning from traditional CSV to risk-based Computer Software Assurance. We help you reduce documentation burden while increasing system reliability.
+          </p>
+<div class="mt-8 flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-variant rounded-full text-xs text-on-surface-variant">Risk-Based</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-xs text-on-surface-variant">Modernization</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-xs text-on-surface-variant">Strategic Alignment</span>
+</div>
+</div>
+<!-- Service 2: Planning & Execution -->
+<div class="col-span-12 md:col-span-4 bg-surface-container rounded-xl p-8 border border-outline-variant hover:border-primary/50 transition-all flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">task_alt</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Validation Planning &amp; Execution</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+              Comprehensive lifecycle management including Validation Plans, URS, FRS, Risk-Based Testing (IQ/OQ/PQ), and Traceability Matrices.
+            </p>
+</div>
+<div class="mt-6 pt-6 border-t border-outline-variant/30 flex items-center text-primary text-sm font-medium cursor-pointer">
+            View Lifecycle Map <span class="material-symbols-outlined ml-2 text-base">open_in_new</span>
+</div>
+</div>
+<!-- Service 3: Cloud & SaaS -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-low rounded-xl border border-outline-variant hover:border-primary/50 transition-all overflow-hidden flex flex-col">
+<div class="p-8 pb-4">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6">cloud_done</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Cloud &amp; SaaS System Validation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+              Specialized validation frameworks for QMS, LIMS, ERP, and MES in virtualized environments.
+            </p>
+</div>
+<div class="mt-auto">
+<img class="w-full h-48 object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" data-alt="high-tech digital server data center with abstract glowing blue fiber optic cables and sleek dark metallic hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoiwItFbZcQAGcifDsgiwO5qEHJM_jm38KWT5rTFhZEkLViQVV4p6YmNVdT4w50jRQzbv4LmHKg9lrSDaKgMwOLMnwH0zOcM4wMkuc6ox1CZBBe2KITVA1HR5ied-HlFGpFT1B30zhSuxVcYMGOXaoZCuuS--aKuoMyoQ151pJxEerW81-d-euaZKpzU_ICzRuJhzQ7SJvLE5iJmWNW86X5eTFlQuCUnLMQXB3EbGBn-W1zwF_87gxkR8ndGJYjWtBY7ZTuSIi3Ro"/>
+</div>
+</div>
+<!-- Service 4: Custom Software -->
+<div class="col-span-12 md:col-span-4 bg-surface-container rounded-xl p-8 border border-outline-variant hover:border-primary/50 transition-all flex flex-col justify-center">
+<div class="mb-6 h-12 w-12 rounded-lg bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">terminal</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Custom Software Qualification</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+            Tailored qualification for GAMP Category 5 systems. Deep code review and structural testing for proprietary platforms.
+          </p>
+</div>
+<!-- Service 5: Data Integrity -->
+<div class="col-span-12 md:col-span-4 bg-primary-container/10 border border-primary/20 rounded-xl p-8 hover:bg-primary-container/20 transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">verified_user</span>
+<h3 class="text-xl font-bold text-on-surface mb-3">Data Integrity &amp; Compliance</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+            Thorough reviews for 21 CFR Part 11 and EU Annex 11 compliance. ALCOA+ principle application across all data streams.
+          </p>
+</div>
+<!-- Service 6: Remediation -->
+<div class="col-span-12 bg-surface-container rounded-xl p-8 border border-outline-variant hover:border-primary/50 transition-all flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-on-surface mb-3">Remediation &amp; Support</h3>
+<p class="text-on-surface-variant leading-relaxed">
+              Continuous compliance monitoring and gap remediation. We don't just find problems; we build the technical and procedural bridges to fix them, ensuring you stay inspection-ready.
+            </p>
+</div>
+<div class="flex shrink-0 gap-4">
+<div class="bg-surface-variant p-4 rounded-lg flex items-center gap-4 border border-outline-variant/30">
+<div class="w-10 h-10 bg-error/20 rounded-full flex items-center justify-center text-error">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<div>
+<div class="text-xs text-on-surface-variant">Gap Identified</div>
+<div class="text-sm font-bold">Risk: High</div>
+</div>
+</div>
+<div class="bg-surface-variant p-4 rounded-lg flex items-center gap-4 border border-outline-variant/30">
+<div class="w-10 h-10 bg-success/20 rounded-full flex items-center justify-center text-green-400">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div>
+<div class="text-xs text-on-surface-variant">Resolution</div>
+<div class="text-sm font-bold">Validated</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-6 relative z-10">
+<div class="bg-gradient-to-br from-surface-container-high to-background border border-outline-variant rounded-3xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute inset-0 hero-gradient opacity-40"></div>
+<h2 class="text-4xl md:text-5xl font-bold text-on-surface mb-6">Ready to modernize your validation strategy?</h2>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 font-body">
+            Partner with GXPThinklabs to ensure your systems are both compliant and high-performing. Our experts are ready to accelerate your journey.
+          </p>
+<button class="px-10 py-5 bg-primary text-on-primary rounded-xl font-bold text-xl hover:scale-105 transition-all shadow-lg shadow-primary/20">
+            Get Started
+          </button>
+<div class="mt-12 flex flex-wrap justify-center gap-8 text-on-surface-variant opacity-60">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> 21 CFR Part 11</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> EU Annex 11</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> GAMP 5</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Implementation -->
+<footer class="bg-zinc-950 border-t border-zinc-900 w-full border-t border-zinc-900">
+<div class="max-w-7xl mx-auto py-12 px-6 flex flex-col md:flex-row justify-between items-center border-t border-zinc-800">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-white mb-4">GXPThinklabs</div>
+<p class="text-xs text-zinc-500 font-sans">© 2024 GXPThinklabs. A SRJH Company. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-xs text-zinc-500 font-sans">
+<a class="hover:underline hover:text-zinc-300 transition-opacity" href="#">Privacy Policy</a>
+<a class="hover:underline hover:text-zinc-300 transition-opacity" href="#">Terms of Service</a>
+<a class="hover:underline hover:text-zinc-300 transition-opacity" href="#">Compliance Standards</a>
+<a class="hover:underline hover:text-zinc-300 transition-opacity text-indigo-500 font-medium" href="#">Contact</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<div class="w-8 h-8 rounded bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-white cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-8 h-8 rounded bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-white cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">language</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
