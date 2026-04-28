@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Server, Monitor, ClipboardCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
@@ -40,15 +39,16 @@ export function Navbar() {
       )}
     >
       <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-        {/* Logo */}
-        <div className="flex items-center gap-8">
-          <Link
-            href="/"
-            className="text-2xl md:text-3xl font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity"
-          >
-            GXPThinklabs
-          </Link>
+        {/* Logo (left) */}
+        <Link
+          href="/"
+          className="text-3xl md:text-4xl font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity"
+        >
+          GXPThinklabs
+        </Link>
 
+        {/* Right side — nav links + theme toggle + mobile menu */}
+        <div className="flex items-center gap-6">
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-6">
             {mainNav.map((item) => {
@@ -131,19 +131,8 @@ export function Navbar() {
               );
             })}
           </div>
-        </div>
 
-        {/* Right side */}
-        <div className="flex items-center gap-3">
           <ThemeToggle className="hidden md:flex" />
-          <Button
-            variant="gradient"
-            size="sm"
-            className="hidden md:inline-flex"
-            asChild
-          >
-            <Link href="/contact">Get Started</Link>
-          </Button>
 
           {/* Mobile Nav */}
           <MobileNav />
