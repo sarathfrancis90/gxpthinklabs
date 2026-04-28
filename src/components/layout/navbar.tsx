@@ -42,9 +42,10 @@ export function Navbar() {
         {/* Logo (left) */}
         <Link
           href="/"
-          className="font-display text-3xl md:text-5xl font-extrabold tracking-tight text-on-surface hover:opacity-80 transition-opacity"
+          className="inline-flex items-baseline font-display font-extrabold tracking-tight text-on-surface hover:opacity-80 transition-opacity"
         >
-          GXPThinklabs
+          <span className="text-3xl md:text-5xl">GXP</span>
+          <span className="text-xl md:text-3xl font-bold">Thinklabs</span>
         </Link>
 
         {/* Right side — nav links + theme toggle + mobile menu */}
