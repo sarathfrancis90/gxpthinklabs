@@ -71,6 +71,7 @@ const config: Config = {
         headline: ["var(--font-inter)", "system-ui", "sans-serif"],
         body: ["var(--font-inter)", "system-ui", "sans-serif"],
         label: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
+        display: ["var(--font-sora)", "var(--font-inter)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "0.25rem",

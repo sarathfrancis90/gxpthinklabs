@@ -42,7 +42,7 @@ export function Navbar() {
         {/* Logo (left) */}
         <Link
           href="/"
-          className="text-3xl md:text-4xl font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity"
+          className="font-display text-3xl md:text-5xl font-extrabold tracking-tight text-on-surface hover:opacity-80 transition-opacity"
         >
           GXPThinklabs
         </Link>
