@@ -5,7 +5,9 @@ import { PageHero } from "@/components/shared/page-hero";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { MissionSection } from "@/components/about/mission-section";
 import { PillarsSection } from "@/components/about/pillars-section";
+import { ExpertiseSection } from "@/components/about/expertise-section";
 import { ParentCompanySection } from "@/components/about/parent-company-section";
+import { ATeamSection } from "@/components/about/a-team-section";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -65,7 +67,15 @@ export default function AboutPage() {
       </ScrollReveal>
 
       <ScrollReveal>
+        <ExpertiseSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
         <ParentCompanySection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <ATeamSection />
       </ScrollReveal>
 
       {/* CTA Section */}

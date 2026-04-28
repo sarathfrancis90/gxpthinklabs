@@ -7,7 +7,7 @@ export const siteConfig = {
   parentCompany: "SRJH",
   founded: 2025,
   contact: {
-    email: "info@gxpthinklabs.com",
+    email: "Mail@gxpthinklabs.com",
     hours: "9am - 6pm EST, Monday - Friday",
     address: {
       city: "Toronto",
@@ -22,6 +22,5 @@ export const siteConfig = {
     copyright: `\u00A9 ${new Date().getFullYear()} GXPThinklabs. A SRJH Company. All rights reserved.`,
     privacyPolicy: "/privacy",
     termsOfService: "/terms",
-    cookiePolicy: "/cookies",
   },
 };

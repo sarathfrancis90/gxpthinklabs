@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 const industryTags = [
   { label: "Biotech", icon: "biotech" },
   { label: "Pharma", icon: "medication" },
-  { label: "Medical Devices", icon: "precision_manufacturing" },
 ];
 
 export function MissionSection() {
@@ -31,10 +30,10 @@ export function MissionSection() {
             Our Mission
           </h2>
           <p className="text-on-surface-variant text-lg leading-relaxed mb-8">
-            We partner with biotech, pharma, and medical device companies to
-            modernize quality systems. By integrating advanced automation with
-            rigorous 21 CFR compliance, we transform regulatory overhead into a
-            strategic advantage.
+            We partner with biotech and pharma companies to modernize quality
+            systems. By integrating advanced automation with rigorous 21 CFR
+            compliance, we transform regulatory overhead into a strategic
+            advantage.
           </p>
           <div className="flex flex-wrap gap-3">
             {industryTags.map((tag) => (

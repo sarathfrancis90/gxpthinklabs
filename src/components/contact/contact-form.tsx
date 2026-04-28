@@ -3,24 +3,15 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { Loader2, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
-
-const contactSchema = z.object({
-  name: z.string().min(1, "Full name is required"),
-  email: z.string().email("Please enter a valid email address"),
-  company: z.string().optional(),
-  serviceInterest: z.string().optional(),
-  message: z
-    .string()
-    .min(10, "Message must be at least 10 characters")
-    .max(2000, "Message is too long"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import {
+  contactSchema,
+  type ContactFormData,
+  HONEYPOT_FIELD,
+} from "@/lib/validations/contact";
 
 const serviceOptions = [
   { value: "infrastructure-qualification", label: "IT Infrastructure Qualification" },
@@ -34,6 +25,7 @@ export function ContactForm() {
     type: "success" | "error";
     message: string;
   } | null>(null);
+  const [honeypot, setHoneypot] = useState("");
 
   const {
     register,
@@ -63,7 +55,7 @@ export function ContactForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, [HONEYPOT_FIELD]: honeypot }),
       });
 
       const result = await response.json();
@@ -107,6 +99,32 @@ export function ContactForm() {
       )}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        {/* Honeypot — visually hidden from users, irresistible to bots. */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            left: "-10000px",
+            top: "auto",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+          }}
+        >
+          <label htmlFor={HONEYPOT_FIELD}>
+            Leave this field empty
+            <input
+              id={HONEYPOT_FIELD}
+              name={HONEYPOT_FIELD}
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+            />
+          </label>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Input
             label="Full Name"

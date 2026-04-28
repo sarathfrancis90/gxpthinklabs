@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-type BgVariant = "circuits" | "waves" | "grid" | "resources" | "products";
+type BgVariant = "circuits" | "waves" | "grid" | "products";
 
 interface SectionBgProps {
   variant: BgVariant;
@@ -26,10 +26,6 @@ const bgMap: Record<BgVariant, { dark: string; light: string }> = {
   grid: {
     dark: "/images/section-bg-grid-dark-v2.png",
     light: "/images/section-bg-grid-light-v2.png",
-  },
-  resources: {
-    dark: "/images/resources-bg-dark.png",
-    light: "/images/resources-bg-light.png",
   },
   products: {
     dark: "/images/products-bg-dark.png",

@@ -70,10 +70,6 @@ export default function ComplianceAuditsPage() {
           label: "Schedule a Consultation",
           href: "/contact",
         }}
-        secondaryCta={{
-          label: "View Case Studies",
-          href: "/resources/white-papers",
-        }}
       />
 
       <SectionDivider />

@@ -33,7 +33,6 @@ export const mainNav: NavItem[] = [
     label: "Products",
     href: "/products/infrastructure-compliance-library",
   },
-  { label: "Resources", href: "/resources/white-papers" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -55,7 +54,6 @@ export const footerNav = {
   company: [
     { label: "About Us", href: "/about" },
     { label: "Products", href: "/products/infrastructure-compliance-library" },
-    { label: "Resources", href: "/resources/white-papers" },
     { label: "Contact", href: "/contact" },
   ],
   legal: [
