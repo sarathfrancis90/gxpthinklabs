@@ -45,7 +45,7 @@ export function Navbar() {
           className="inline-flex items-baseline font-display font-extrabold tracking-tight text-on-surface hover:opacity-80 transition-opacity"
         >
           <span className="text-3xl md:text-5xl">GXP</span>
-          <span className="text-xl md:text-3xl font-bold">Thinklabs</span>
+          <span className="text-2xl md:text-4xl font-bold">Thinklabs</span>
         </Link>
 
         {/* Right side — nav links + theme toggle + mobile menu */}
