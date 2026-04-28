@@ -53,17 +53,6 @@ export function HeroSection() {
 
       {/* === CONTENT === */}
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-        {/* Founded 2025 Badge */}
-        <div className="animate-fade-up" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 dark:border-primary/30 bg-surface-container-lowest/80 dark:bg-surface-container/80 backdrop-blur-sm text-xs font-label uppercase tracking-[0.2em] text-primary mb-8 shadow-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
-            </span>
-            Founded 2025
-          </div>
-        </div>
-
         {/* H1 */}
         <h1
           className="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-6 leading-[1.05] animate-fade-up"

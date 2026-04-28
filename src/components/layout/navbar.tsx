@@ -44,7 +44,7 @@ export function Navbar() {
         <div className="flex items-center gap-8">
           <Link
             href="/"
-            className="text-xl font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity"
+            className="text-2xl md:text-3xl font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity"
           >
             GXPThinklabs
           </Link>
